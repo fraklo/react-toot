@@ -1,0 +1,2 @@
+ApplicationBase.views.index =
+  init: ->
