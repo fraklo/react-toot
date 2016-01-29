@@ -1,67 +1,8 @@
 header {
   padding: 5rem 0 6rem;
 
-  .logo.img-wrapper {
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 1rem 0 0;
-    overflow: hidden;
-    width: 7rem;
-  }
-
   .headline {
-    align-items: center;
-    display: flex;
     margin-bottom: 5.5rem;
-  }
-
-  h1, .links-wrapper {
-    flex: 1 1;
-  }
-
-  .links-wrapper {
-    text-align: right;
-    white-space: nowrap;
-  }
-
-  .link {
-    display: inline-block;
-    font-size: 1.4rem;
-    margin-left: 1rem;
-    line-height: 1.1;
-    span {
-      display: none;
-      &.text {
-        display: inline-block;
-        padding: .4rem;
-        position: relative;
-        transition: color .4s;
-        z-index: 99;
-        &:hover {
-          color: #fff;
-          &:before {
-            background-color: $primary;
-            border-radius: $btn-radius;
-            height: 100%;
-            width: 100%;
-          }
-        }
-        &:before {
-          background-color: #fff;
-          border-radius: 50%;
-          content: "";
-          display: inline-block;
-          height: 50%;
-          left: 50%;
-          top: 50%;
-          position: absolute;
-          transition: all .35s;
-          transform: translate(-50%, -50%);
-          width: 50%;
-          z-index: -1;
-        }
-      }
-    }
   }
 
   .tagline {
@@ -74,33 +15,9 @@ header {
 
 
   @media #{$tablet} {
-    .logo.img-wrapper {
-      width: 9.75rem;
-    }
   }
 
   @media #{$phone} {
     padding: 4rem 0 2rem;
-
-    .logo.img-wrapper {
-      display: none;
-    }
-    .text-wrapper {
-      padding-left: 0;
-    }
-    .links-wrapper {
-      margin-left: -1rem;
-      position: relative;
-      right: auto;
-      top: auto;
-      width: 100%;
-    }
-    .link span {
-      display: inline-block;
-      font-size: 2rem;
-      &.text {
-        display: none;
-      }
-    }
   }
 }
