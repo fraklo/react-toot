@@ -6,7 +6,7 @@ ReactBase.components.CommentList = React.createClass({
           This is 1 comment
         </ReactBase.components.Comment>
         <ReactBase.components.Comment author="Jordan">
-          This is another comment
+          This is *another* comment
         </ReactBase.components.Comment>
       </div>
     );
