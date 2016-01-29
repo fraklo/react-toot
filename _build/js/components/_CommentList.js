@@ -1,13 +1,15 @@
 ReactBase.components.CommentList = React.createClass({
   render: function() {
+    var commentNodes = this.props.data.map(function(comment) {
+      return (
+        <ReactBase.components.Comment author={comment.author} key={comment.id}>
+          {comment.text}
+        </ReactBase.components.Comment>
+      )  ;
+    });
     return (
       <div className="commentList">
-        <ReactBase.components.Comment author="Pete Hunt">
-          This is 1 comment
-        </ReactBase.components.Comment>
-        <ReactBase.components.Comment author="Jordan">
-          This is *another* comment
-        </ReactBase.components.Comment>
+        {commentNodes}
       </div>
     );
   }
