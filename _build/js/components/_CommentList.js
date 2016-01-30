@@ -5,7 +5,7 @@ ReactBase.components.CommentList = React.createClass({
         <ReactBase.components.Comment author={comment.author} key={comment.id}>
           {comment.text}
         </ReactBase.components.Comment>
-      )  ;
+      );
     });
     return (
       <div className="commentList">
