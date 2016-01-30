@@ -10,4 +10,10 @@
   $(function(){
     ApplicationBase.views.index.init()
   });
+  ReactDOM.render(
+    <ReactBase.components.CommentBox
+      url="/api.php/comments"
+      pollInterval={2000} />,
+    document.getElementById('content')
+  )
 
